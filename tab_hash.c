@@ -13,6 +13,8 @@ tipo_no_hash *alocaNoHash(int chave, char dado){
     novo_no->valor = dado;
     novo_no->prox = NULL;
     return novo_no;
+
+
 }
 
 int funcaoHash(int chave){
@@ -90,7 +92,7 @@ void imprimeTabHash(tipo_tab_hash *tbh) {
                 printf("[%d|%c]-> ", aux->chave, aux->valor); 
                 aux = aux->prox;
             }
-            printf("NULL\n");
+            printf("NULL\n"); // feito por 
         }
     }
 }
